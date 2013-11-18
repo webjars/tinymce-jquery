@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>tinymce-jquery</artifactId>
-    <version>3.4.10-SNAPSHOT</version>
+    <version>4.0.10-SNAPSHOT</version>
     <name>TinyMCE jQuery</name>
     <description>WebJar for TinyMCE jQuery</description>
     <url>http://webjars.org</url>
@@ -41,8 +41,8 @@
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstreamVersion>3.4.9</upstreamVersion>
-        <sourceUrl>http://github.com/downloads/tinymce/tinymce/</sourceUrl>
+        <upstreamVersion>4.0.10</upstreamVersion>
+        <sourceUrl>http://download.moxiecode.com/tinymce</sourceUrl>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
     </properties>
     
@@ -78,7 +78,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/tinymce" />
+                                    <fileset dir="${project.build.directory}/tinymce/js/tinymce" />
                                 </move>
                             </target>
                         </configuration>
@@ -93,34 +93,4 @@
         </plugins>
     </build>
 
-    <profiles>
-        <profile>
-            <id>release-sign-artifacts</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-                <property>
-                    <name>performRelease</name>
-                    <value>true</value>
-                </property>
-            </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.2</version>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
-    
 </project>
