@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>tinymce-jquery</artifactId>
-    <version>4.1.7-1</version>
+    <version>4.1.7-2-SNAPSHOT</version>
     <name>TinyMCE jQuery</name>
     <description>WebJar for TinyMCE jQuery</description>
     <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
         <url>http://github.com/webjars/tinymce-jquery</url>
         <connection>scm:git:https://github.com/webjars/tinymce-jquery.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/tinymce-jquery.git</developerConnection>
-        <tag>tinymce-jquery-4.1.7-1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <developers>
