@@ -11,14 +11,14 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>tinymce-jquery</artifactId>
-    <version>4.1.8-SNAPSHOT</version>
+    <version>4.1.7-1-SNAPSHOT</version>
     <name>TinyMCE jQuery</name>
     <description>WebJar for TinyMCE jQuery</description>
     <url>http://webjars.org</url>
 
     <licenses>
         <license>
-            <name>GPL v2.1</name>
+            <name>LGPL v2.1</name>
             <url>http://www.tinymce.com/js/tinymce/jscripts/tiny_mce/license.txt</url>
             <distribution>repo</distribution>
         </license>
