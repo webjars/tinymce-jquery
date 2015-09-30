@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>tinymce-jquery</artifactId>
-    <version>4.2.6-SNAPSHOT</version>
+    <version>4.2.6</version>
     <name>TinyMCE jQuery</name>
     <description>WebJar for TinyMCE jQuery</description>
     <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
         <url>http://github.com/webjars/tinymce-jquery</url>
         <connection>scm:git:https://github.com/webjars/tinymce-jquery.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/tinymce-jquery.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>tinymce-jquery-4.2.6</tag>
     </scm>
 
     <developers>
@@ -74,11 +74,11 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/tinymce/js/tinymce"/>
+                                    <fileset dir="${project.build.directory}/tinymce/js/tinymce" />
                                 </move>
                             </target>
                         </configuration>
